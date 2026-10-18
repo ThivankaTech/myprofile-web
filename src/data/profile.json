@@ -311,7 +311,7 @@
         {
           "id": "rebtel-domain-lead-2",
           "name": "Adyen, Braintree \u0026 wallets",
-          "description": "Led integrations with Adyen and Braintree, including Braintree vaulting for saved payment methods, and shipped Apple Pay/Google Pay support, improving customer authorization and payment success rates.",
+          "description": "Participated in the Adyen and Braintree integrations, including Braintree vaulting for saved payment methods, and in shipping Apple Pay/Google Pay support, improving customer authorization and payment success rates.",
           "techStack": [
             "Adyen",
             "Braintree",
@@ -333,7 +333,7 @@
         {
           "id": "rebtel-domain-lead-4",
           "name": "GitOps migration \u0026 provider mocking",
-          "description": "Migrated the deployment pipeline from Helm/Azure to GitOps (GitHub Actions and ArgoCD); built an in-cluster HTTP interceptor to mock flaky third-party providers in dev/stage, improving deployment reliability and speed.",
+          "description": "Helped with and participated in the migration of the deployment pipeline from Helm/Azure to GitOps (GitHub Actions and ArgoCD); built an in-cluster HTTP interceptor to mock flaky third-party providers in dev/stage, improving deployment reliability and speed.",
           "techStack": [
             "GitHub Actions",
             "ArgoCD",
@@ -430,7 +430,7 @@
         {
           "id": "rebtel-mtu-marketplace-1",
           "name": "Top-up provider integrations",
-          "description": "Integrated third-party mobile top-up providers (Ding, DT One, Zendit) and refactored into a reusable onboarding workflow, cutting integration time from ~1.5 months to ~2 weeks.",
+          "description": "Helped integrate and maintain third-party mobile top-up providers (Ding, DT One, Zendit), and refactored them into a reusable onboarding workflow, cutting integration time from ~1.5 months to ~2 weeks.",
           "techStack": [
             ".NET",
             "Ding",
