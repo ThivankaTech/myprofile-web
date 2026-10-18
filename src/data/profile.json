@@ -1,0 +1,708 @@
+{
+  "name": "Thiwanka Saranatha",
+  "headline": "Senior .NET Developer | Payment Backend Domain Lead",
+  "bio": "Grew up in Sri Lanka, now building software from Stockholm, Sweden.",
+  "about": "Senior .NET Developer with 8+ years building backend systems across fintech and enterprise SaaS. Progressed from .NET Developer to Domain Lead for Rebtel's Payment Backend, architecting distributed, event-driven systems and end-to-end payment integrations. Strong background in .NET Core, cloud (Azure, Kubernetes), and domain-driven design, with a track record of evaluating technical trade-offs, driving architectural consensus across stakeholders, and raising team-wide code quality and test coverage.",
+  "homeCountry": "Sri Lanka",
+  "currentCountry": "Sweden",
+  "skills": [
+    {
+      "category": "Backend",
+      "items": [
+        "C#",
+        ".NET Core/8",
+        "ASP.NET Core",
+        "Entity Framework Core",
+        "Web API"
+      ]
+    },
+    {
+      "category": "Architecture",
+      "items": [
+        "Microservices",
+        "Event-driven design",
+        "State machines",
+        "Design Patterns",
+        "SOLID",
+        "Domain-Driven Design"
+      ]
+    },
+    {
+      "category": "Cloud \u0026 DevOps",
+      "items": [
+        "Azure",
+        "AKS (Kubernetes)",
+        "Docker",
+        "GitHub Actions",
+        "ArgoCD (GitOps)",
+        "CI/CD"
+      ]
+    },
+    {
+      "category": "Data \u0026 Messaging",
+      "items": [
+        "SQL Server",
+        "PostgreSQL",
+        "MongoDB",
+        "RabbitMQ"
+      ]
+    },
+    {
+      "category": "Payments",
+      "items": [
+        "Adyen",
+        "Worldline",
+        "Apple Pay",
+        "Google Pay",
+        "InComm",
+        "Ledger \u0026 accounting systems"
+      ]
+    },
+    {
+      "category": "Frontend \u0026 Mobile",
+      "items": [
+        "Angular",
+        "TypeScript",
+        "JavaScript",
+        "Ionic",
+        "Flutter"
+      ]
+    },
+    {
+      "category": "AI-Assisted Engineering",
+      "items": [
+        "Claude",
+        "MCP server development",
+        "AI-driven code review \u0026 test automation"
+      ]
+    },
+    {
+      "category": "Tools",
+      "items": [
+        "Visual Studio",
+        "VS Code",
+        "Git"
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "reptile-band",
+      "title": "Reptile — the Rebtel band",
+      "category": "Music",
+      "featured": true,
+      "orientation": "landscape",
+      "description": "I had the opportunity to join and play in Rebtel's own band, Reptile, where I played the guitar.",
+      "tags": [
+        "Rebtel",
+        "Guitar",
+        "Live music"
+      ],
+      "images": [
+        {
+          "src": "/activities/reptile-band-stage.jpg",
+          "alt": "The Reptile band performing at a Rebtel party, with me on guitar",
+          "focus": "",
+          "credit": "",
+          "creditUrl": ""
+        },
+        {
+          "src": "/activities/reptile-band-guitar.jpg",
+          "alt": "Playing the guitar with Reptile",
+          "focus": "",
+          "credit": "",
+          "creditUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "gym",
+      "title": "Gym, healthy eating \u0026 cardio",
+      "category": "Fitness",
+      "featured": false,
+      "orientation": "portrait",
+      "description": "I'm a gym enthusiast and I love training. I focus on eating healthy and doing cardio too, because looking after my body is one of the best things I can do for my mental health.",
+      "tags": [
+        "Strength training",
+        "Healthy eating",
+        "Cardio",
+        "Mental health"
+      ],
+      "images": [
+        {
+          "src": "/activities/gym-mirror.jpg",
+          "alt": "Me at the gym, standing by a squat rack",
+          "focus": "",
+          "credit": "",
+          "creditUrl": ""
+        },
+        {
+          "src": "/activities/gym-deadlift.jpg",
+          "alt": "Deadlifting at the gym",
+          "focus": "",
+          "credit": "",
+          "creditUrl": ""
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "title": "RabbitMQ Basics Part 2 (Routing)",
+      "url": "https://medium.com/@thivanka.saranathapro/rabbitmq-basics-part-2-routing-c55d5131f6e1",
+      "platform": "Medium",
+      "published": "2024-09-15",
+      "readMinutes": 3,
+      "tags": [
+        "RabbitMQ",
+        "Messaging"
+      ]
+    },
+    {
+      "title": "Effortless Resilience with Polly: Safeguarding Your .NET Integrations from Temporary Failures",
+      "url": "https://medium.com/@thivanka.saranathapro/effortless-resilience-with-polly-safeguarding-your-net-integrations-from-temporary-failures-3b8516cf9153",
+      "platform": "Medium",
+      "published": "2024-08-25",
+      "readMinutes": 3,
+      "tags": [
+        ".NET",
+        "Polly",
+        "Resilience"
+      ]
+    },
+    {
+      "title": "RabbitMQ Basic — Part 1",
+      "url": "https://medium.com/@thivanka.saranathapro/rabbitmq-basic-part-1-5e61a5b82848",
+      "platform": "Medium",
+      "published": "2024-08-05",
+      "readMinutes": 9,
+      "tags": [
+        "RabbitMQ",
+        "Messaging"
+      ]
+    },
+    {
+      "title": "Efficient Background Task Management in ASP.NET Core: Implementing Timed Hosted Services",
+      "url": "https://medium.com/@thivanka.saranathapro/efficient-background-task-management-in-asp-net-core-implementing-timed-hosted-services-cfae5d817b4e",
+      "platform": "Medium",
+      "published": "2024-07-20",
+      "readMinutes": 5,
+      "tags": [
+        "ASP.NET Core",
+        ".NET"
+      ]
+    },
+    {
+      "title": "Introduction to Asynchronous Programming in C# (Task, async void, ValueTask)",
+      "url": "https://medium.com/@thivanka.saranathapro/introduction-to-asynchronous-programming-in-c-task-async-void-valuetask-e22e8536367b",
+      "platform": "Medium",
+      "published": "2024-06-08",
+      "readMinutes": 6,
+      "tags": [
+        "C#",
+        "Async"
+      ]
+    },
+    {
+      "title": "C# Extension Methods: Making Your Code Cool \u0026 Clever!",
+      "url": "https://medium.com/@thivanka.saranathapro/c-extension-methods-making-your-code-cool-clever-a96325cc50d7",
+      "platform": "Medium",
+      "published": "2024-03-10",
+      "readMinutes": 3,
+      "tags": [
+        "C#"
+      ]
+    },
+    {
+      "title": "The Art of Small Steps: A Journey in Marginal Gains and Mastery",
+      "url": "https://medium.com/@thivanka.saranathapro/the-art-of-small-steps-a-journey-in-marginal-gains-and-mastery-e97214c15168",
+      "platform": "Medium",
+      "published": "2024-03-01",
+      "readMinutes": 2,
+      "tags": [
+        "Growth"
+      ]
+    },
+    {
+      "title": "Embracing the Power of Channels in C#: A Transformation in .NET Core",
+      "url": "https://medium.com/@thivanka.saranathapro/embracing-the-power-of-channels-in-c-a-transformation-in-net-core-205f0ee3ed19",
+      "platform": "Medium",
+      "published": "2024-02-27",
+      "readMinutes": 2,
+      "tags": [
+        "C#",
+        ".NET"
+      ]
+    },
+    {
+      "title": "Small note about Types: Structs, Records, and Classes in C#",
+      "url": "https://medium.com/@thivanka.saranathapro/small-note-about-types-structs-records-and-classes-in-c-f2020b905aad",
+      "platform": "Medium",
+      "published": "2024-02-22",
+      "readMinutes": 3,
+      "tags": [
+        "C#"
+      ]
+    },
+    {
+      "title": "Developing Dependency Injection in a .NET Core API",
+      "url": "https://medium.com/@thivanka.saranathapro/developing-dependency-injection-in-a-net-core-api-818301f8e53e",
+      "platform": "Medium",
+      "published": "2023-02-21",
+      "readMinutes": 3,
+      "tags": [
+        ".NET",
+        "Dependency Injection"
+      ]
+    }
+  ],
+  "recommendations": [
+    {
+      "name": "Anna Cantrell",
+      "title": "VP of Engineering at Rebtel",
+      "relationship": "Anna managed Thiwanka directly",
+      "date": "2026-10-14",
+      "text": "I worked with Thiwanka for three years, and he was such a pleasure to work with. He's an endlessly curious backend developer who loves learning, sharing what he knows, and tackling a challenge. He brings enthusiasm to even the most complicated problems, and he's a warm, kind teammate who enjoys both learning from others and mentoring fellow developers.\n\nThiwanka was one of the first developers in the company to begin experimenting with AI early on in its progression, finding genuinely impactful ways for it to save the company significant time and money. From the earliest outset Thiwanka remained a leader in AI development tools and practices.\n\nWhen one of our most experienced developers left, Thiwanka took ownership of our payments area, one of the most complex and consequential parts of our platform. He not only took ownership of the domain but he meaningfully improved upon it, adding much-needed testing, and delivering new functionality that made a measurable impact on the business.\n\nI'd happily work with Thiwanka again. Any team would be lucky to have him."
+    },
+    {
+      "name": "Can Bakış",
+      "title": "Engineering Manager | AI Lead",
+      "relationship": "Can managed Thiwanka directly",
+      "date": "2025-02-22",
+      "text": "I was very happy have Thivanka in my team, he's work ethics, friendly approach to solving any kind of problem, made it easy for everyone around him to be productive. He also helped me a lot when I was new in the company, guiding me around tech stack and giving great information with relevant context. I have no doubt that Thivanka is always going to be a well appreciated member of any team, and I see the potential in him to become a great leader. He always delivers results with speed and quality, takes the challenges with a smile and makes the lives around him around workplace easier. Highly recommended!"
+    }
+  ],
+  "linkedinUrl": "https://www.linkedin.com/in/thiwanka-saranatha-984268118/",
+  "articlesUrl": "https://medium.com/@thivanka.saranathapro",
+  "workExperience": [
+    {
+      "id": "rebtel-domain-lead",
+      "company": "Rebtel",
+      "role": "Domain Lead, Payment Backend",
+      "summary": "Owning Rebtel's payment backend end to end.",
+      "location": {
+        "city": "Stockholm",
+        "country": "Sweden",
+        "lat": 59.33489,
+        "lng": 18.07073,
+        "photo": {
+          "src": "/places/stockholm.jpg",
+          "alt": "Stockholm City Hall on the water at dusk",
+          "focus": "",
+          "credit": "Julian Herzog, CC BY 4.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Stockholms_Stadshuset_City_Hall_Stockholm_2016_02.jpg"
+        }
+      },
+      "from": "2026-01",
+      "to": "Present",
+      "projects": [
+        {
+          "id": "rebtel-domain-lead-1",
+          "name": "Payment backend ownership",
+          "description": "Own architecture and delivery for Rebtel's payment backend as Domain Lead, spanning top-up, eSIM, and calling payments; currently designing pay-with-cash support for US customers via InComm with domain-driven design, applying SOLID principles throughout implementation.",
+          "techStack": [
+            ".NET",
+            "DDD",
+            "SOLID",
+            "InComm"
+          ],
+          "highlight": false
+        },
+        {
+          "id": "rebtel-domain-lead-2",
+          "name": "Adyen, Braintree \u0026 wallets",
+          "description": "Led integrations with Adyen and Braintree, including Braintree vaulting for saved payment methods, and shipped Apple Pay/Google Pay support, improving customer authorization and payment success rates.",
+          "techStack": [
+            "Adyen",
+            "Braintree",
+            "Apple Pay",
+            "Google Pay"
+          ],
+          "highlight": false
+        },
+        {
+          "id": "rebtel-domain-lead-3",
+          "name": "Rebtel Credits ledger",
+          "description": "Redesigned ledger and accounting systems to support \"Rebtel Credits\" as a native payment method.",
+          "techStack": [
+            ".NET",
+            "SQL Server"
+          ],
+          "highlight": false
+        },
+        {
+          "id": "rebtel-domain-lead-4",
+          "name": "GitOps migration \u0026 provider mocking",
+          "description": "Migrated the deployment pipeline from Helm/Azure to GitOps (GitHub Actions and ArgoCD); built an in-cluster HTTP interceptor to mock flaky third-party providers in dev/stage, improving deployment reliability and speed.",
+          "techStack": [
+            "GitHub Actions",
+            "ArgoCD",
+            "Kubernetes",
+            "Helm"
+          ],
+          "highlight": false
+        },
+        {
+          "id": "rebtel-domain-lead-5",
+          "name": "AI-assisted engineering workflow",
+          "description": "Built AI-assisted engineering workflows (Claude) and an internal MCP server encoding team coding standards, raising code quality and test coverage.",
+          "techStack": [
+            "Claude",
+            "MCP"
+          ],
+          "highlight": false
+        }
+      ]
+    },
+    {
+      "id": "rebtel-wireless-calling",
+      "company": "Rebtel",
+      "role": ".NET Developer, Wireless (eSIM) \u0026 Calling",
+      "summary": "Built Rebtel Wireless (eSIM) and helped modernise calling.",
+      "location": {
+        "city": "Stockholm",
+        "country": "Sweden",
+        "lat": 59.33489,
+        "lng": 18.07073,
+        "photo": {
+          "src": "/places/stockholm.jpg",
+          "alt": "Stockholm City Hall on the water at dusk",
+          "focus": "",
+          "credit": "Julian Herzog, CC BY 4.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Stockholms_Stadshuset_City_Hall_Stockholm_2016_02.jpg"
+        }
+      },
+      "from": "2024-09",
+      "to": "2026-01",
+      "projects": [
+        {
+          "id": "rebtel-wireless-calling-1",
+          "name": "Rebtel Wireless (eSIM)",
+          "description": "Built Rebtel Wireless (eSIM product) integrating with Gigs for provisioning; designed the lifecycle state machine and subscription engine with domain-driven design, applying SOLID principles throughout implementation.",
+          "techStack": [
+            ".NET",
+            "DDD",
+            "State machines",
+            "Gigs"
+          ],
+          "highlight": false
+        },
+        {
+          "id": "rebtel-wireless-calling-2",
+          "name": "Calling: helping move to .NET Core",
+          "description": "Helped migrate the calling product from .NET Framework 4.8 to .NET Core, delivering part of the migration while continuing to ship new features.",
+          "techStack": [
+            ".NET Framework",
+            ".NET Core"
+          ],
+          "highlight": false
+        },
+        {
+          "id": "rebtel-wireless-calling-3",
+          "name": "Promotion to Senior .NET Developer",
+          "description": "Recognised for the Senior .NET Developer level around Sep 2025; the promotion became official in Jan 2026.",
+          "techStack": [],
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": "rebtel-mtu-marketplace",
+      "company": "Rebtel",
+      "role": ".NET Developer, MTU Marketplace",
+      "summary": "Cut top-up provider onboarding from ~1.5 months to ~2 weeks.",
+      "location": {
+        "city": "Stockholm",
+        "country": "Sweden",
+        "lat": 59.33489,
+        "lng": 18.07073,
+        "photo": {
+          "src": "/places/stockholm.jpg",
+          "alt": "Stockholm City Hall on the water at dusk",
+          "focus": "",
+          "credit": "Julian Herzog, CC BY 4.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Stockholms_Stadshuset_City_Hall_Stockholm_2016_02.jpg"
+        }
+      },
+      "from": "2023-12",
+      "to": "2024-09",
+      "projects": [
+        {
+          "id": "rebtel-mtu-marketplace-1",
+          "name": "Top-up provider integrations",
+          "description": "Integrated third-party mobile top-up providers (Ding, DT One, Zendit) and refactored into a reusable onboarding workflow, cutting integration time from ~1.5 months to ~2 weeks.",
+          "techStack": [
+            ".NET",
+            "Ding",
+            "DT One",
+            "Zendit"
+          ],
+          "highlight": false
+        }
+      ]
+    },
+    {
+      "id": "rebtel-money-transfer",
+      "company": "Rebtel",
+      "role": ".NET Developer, Money Transfer",
+      "summary": "Maintained and extended Rebtel's money transfer product.",
+      "location": {
+        "city": "Stockholm",
+        "country": "Sweden",
+        "lat": 59.33489,
+        "lng": 18.07073,
+        "photo": {
+          "src": "/places/stockholm.jpg",
+          "alt": "Stockholm City Hall on the water at dusk",
+          "focus": "",
+          "credit": "Julian Herzog, CC BY 4.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Stockholms_Stadshuset_City_Hall_Stockholm_2016_02.jpg"
+        }
+      },
+      "from": "2023-06",
+      "to": "2023-12",
+      "projects": [
+        {
+          "id": "rebtel-money-transfer-1",
+          "name": "Money transfer product",
+          "description": "Maintained Rebtel's money transfer product with Ria (.NET Core, SQL Server, MongoDB, RabbitMQ) and continued building new features on it; built an Angular support tool for transaction troubleshooting.",
+          "techStack": [
+            ".NET Core",
+            "SQL Server",
+            "MongoDB",
+            "RabbitMQ",
+            "Angular"
+          ],
+          "highlight": false
+        }
+      ]
+    },
+    {
+      "id": "infor-nexus",
+      "company": "Infor Nexus",
+      "role": "Senior Software Engineer",
+      "summary": "Mobile, desktop and backend delivery across three teams.",
+      "location": {
+        "city": "Colombo",
+        "country": "Sri Lanka",
+        "lat": 6.91406,
+        "lng": 79.84884,
+        "photo": {
+          "src": "/places/colombo.jpg",
+          "alt": "The Colombo skyline and harbour seen from above",
+          "focus": "right",
+          "credit": "Sergei Gussev, CC BY 2.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Colombo_skyline_from_Hilton.jpg"
+        }
+      },
+      "from": "2020-01",
+      "to": "2023-05",
+      "projects": [
+        {
+          "id": "infor-nexus-1",
+          "name": "Three teams: mobile, desktop, backend",
+          "description": "Delivered across three teams: mobile (Ionic/Angular), desktop (C#/VSTO Excel add-in), and backend (Java API), including a VSTO threading/performance fix at 10,000+ record scale.",
+          "techStack": [
+            "Ionic",
+            "Angular",
+            "C#",
+            "VSTO",
+            "Java"
+          ],
+          "highlight": false
+        },
+        {
+          "id": "infor-nexus-2",
+          "name": "Promotion to Senior Software Engineer",
+          "description": "Promoted to Senior Software Engineer (Jan 2022).",
+          "techStack": [],
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": "scienter-technologies",
+      "company": "Scienter Technologies",
+      "role": "Associate Software Engineer",
+      "summary": "Rebuilt a legacy ERP system in .NET Core and Angular.",
+      "location": {
+        "city": "Colombo",
+        "country": "Sri Lanka",
+        "lat": 6.8905,
+        "lng": 79.857,
+        "photo": {
+          "src": "/places/colombo.jpg",
+          "alt": "The Colombo skyline and harbour seen from above",
+          "focus": "right",
+          "credit": "Sergei Gussev, CC BY 2.0",
+          "creditUrl": "https://commons.wikimedia.org/wiki/File:Colombo_skyline_from_Hilton.jpg"
+        }
+      },
+      "from": "2018-06",
+      "to": "2020-01",
+      "projects": [
+        {
+          "id": "scienter-technologies-1",
+          "name": "Legacy ERP rebuild",
+          "description": "Rebuilt a legacy ERP system (.NET Core and Angular) across master data, product management, invoice, and BOQ modules.",
+          "techStack": [
+            ".NET Core",
+            "Angular"
+          ],
+          "highlight": false
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "General Sir John Kotelawala Defence University",
+      "degree": "B.Sc (Hons) in Computer Science",
+      "from": "2015-01",
+      "to": "2018-12",
+      "note": "GPA 3.4"
+    }
+  ],
+  "travelDestinations": [
+    {
+      "id": "talpe",
+      "location": {
+        "city": "Talpe",
+        "country": "Sri Lanka",
+        "lat": 5.9886,
+        "lng": 80.2745,
+        "photo": null
+      },
+      "year": "",
+      "note": "Sunsets and a sky-blue courtyard in Talpe, on Sri Lanka's south coast.",
+      "images": [
+        {
+          "src": "/travel/talpe-sunset.jpg",
+          "alt": "Sunset over the sea framed by coconut palms in Talpe, Sri Lanka",
+          "focus": "",
+          "credit": "",
+          "creditUrl": ""
+        },
+        {
+          "src": "/travel/talpe-courtyard.jpg",
+          "alt": "A blue-and-white courtyard with a painted fish mural in Talpe, Sri Lanka",
+          "focus": "",
+          "credit": "",
+          "creditUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "vienna",
+      "location": {
+        "city": "Vienna",
+        "country": "Austria",
+        "lat": 48.2082,
+        "lng": 16.3738,
+        "photo": null
+      },
+      "year": "",
+      "note": "A horse-drawn Fiaker carriage in the old town.",
+      "images": [
+        {
+          "src": "/travel/vienna-fiaker.jpg",
+          "alt": "A horse-drawn Fiaker carriage and its driver on a street in Vienna",
+          "focus": "",
+          "credit": "",
+          "creditUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "budapest",
+      "location": {
+        "city": "Budapest",
+        "country": "Hungary",
+        "lat": 47.4979,
+        "lng": 19.0402,
+        "photo": null
+      },
+      "year": "",
+      "note": "A night on the Danube.",
+      "images": [
+        {
+          "src": "/travel/budapest-danube-night.jpg",
+          "alt": "A boat lit up in blue on the Danube at night in Budapest",
+          "focus": "",
+          "credit": "",
+          "creditUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "utrecht",
+      "location": {
+        "city": "Utrecht",
+        "country": "Netherlands",
+        "lat": 52.0926,
+        "lng": 5.119,
+        "photo": null
+      },
+      "year": "",
+      "note": "A shop window full of handmade mosaic lamps on Zadelstraat.",
+      "images": [
+        {
+          "src": "/travel/utrecht-lamp-shop.jpg",
+          "alt": "A glowing window of handmade mosaic lamps at J\u0026Z Handmade in Utrecht",
+          "focus": "",
+          "credit": "",
+          "creditUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "barcelona",
+      "location": {
+        "city": "Barcelona",
+        "country": "Spain",
+        "lat": 41.3797,
+        "lng": 2.1683,
+        "photo": null
+      },
+      "year": "",
+      "note": "Botero's bronze cat on Rambla del Raval.",
+      "images": [
+        {
+          "src": "/travel/barcelona-botero-cat.jpg",
+          "alt": "Botero's giant bronze cat statue on Rambla del Raval in Barcelona",
+          "focus": "",
+          "credit": "",
+          "creditUrl": ""
+        }
+      ]
+    },
+    {
+      "id": "copenhagen",
+      "location": {
+        "city": "Copenhagen",
+        "country": "Denmark",
+        "lat": 55.6761,
+        "lng": 12.5683,
+        "photo": null
+      },
+      "year": "",
+      "note": "An evening at the Pantomime Theatre in Tivoli Gardens.",
+      "images": [
+        {
+          "src": "/travel/copenhagen-tivoli-pantomime.jpg",
+          "alt": "A performance on the golden Pantomime Theatre stage in Tivoli Gardens, Copenhagen",
+          "focus": "",
+          "credit": "",
+          "creditUrl": ""
+        },
+        {
+          "src": "/travel/copenhagen-airport.jpg",
+          "alt": "Standing on the airport apron in front of a Norwegian plane",
+          "focus": "",
+          "credit": "",
+          "creditUrl": ""
+        }
+      ]
+    }
+  ]
+}

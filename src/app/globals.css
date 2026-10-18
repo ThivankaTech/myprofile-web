@@ -1,26 +1,148 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #0a0820;
+  --surface: #14123a;
+  --fg: #e0e7ff;
+  --fg-dim: #9aa3c7;
+  --border: #2e2a6b;
+  --accent: #818cf8;
+  --accent-soft: rgba(129, 140, 248, 0.14);
+  --travel: #f59e0b;
+  --travel-soft: rgba(245, 158, 11, 0.12);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-fg-dim: var(--fg-dim);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-travel: var(--travel);
+  --color-travel-soft: var(--travel-soft);
+  --font-sans: var(--font-sans);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 60% 50% at 20% 10%, rgba(99, 102, 241, 0.18), transparent 70%),
+    radial-gradient(ellipse 50% 40% at 90% 90%, rgba(129, 140, 248, 0.1), transparent 70%),
+    linear-gradient(rgba(129, 140, 248, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(129, 140, 248, 0.05) 1px, transparent 1px);
+  background-size: auto, auto, 44px 44px, 44px 44px;
+  background-attachment: fixed;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #2e2a6b;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4338ca;
+}
+
+@keyframes window-glow {
+  0%,
+  100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes drive-right {
+  0% {
+    transform: translateX(-12px);
+  }
+  100% {
+    transform: translateX(412px);
+  }
+}
+
+@keyframes drive-left {
+  0% {
+    transform: translateX(412px);
+  }
+  100% {
+    transform: translateX(-12px);
+  }
+}
+
+.animate-window-glow {
+  animation-name: window-glow;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.animate-drive-right {
+  animation-name: drive-right;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.animate-drive-left {
+  animation-name: drive-left;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes halo-pulse {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+
+.animate-halo-pulse {
+  animation: halo-pulse 3s ease-in-out infinite;
+}
+
+@keyframes boat-drift {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(-2deg);
+  }
+  50% {
+    transform: translate(2.5px, -1px) rotate(2deg);
+  }
+}
+
+.animate-boat-drift {
+  animation: boat-drift 4.5s ease-in-out infinite;
+}
+
+/* Opacity-only (no transform) so this never fights the SVG elements' own
+   transform="scale(...)" attribute used for zoom-independent sizing. */
+@keyframes pop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-pop-in {
+  animation: pop-in 0.45s ease-out both;
 }
