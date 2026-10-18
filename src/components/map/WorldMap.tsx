@@ -585,6 +585,14 @@ export function WorldMap({
             zoom={view.zoom}
             minZoom={MIN_ZOOM}
             maxZoom={MAX_ZOOM}
+            // Touch is left to the page (scroll), not the map: a finger on the
+            // globe would otherwise drag it away. Mouse drag, the wheel and the
+            // +/- buttons still work; pins stay tappable.
+            filterZoomEvent={(event: Event) => {
+              if (event.type.startsWith("touch")) return false;
+              const mouse = event as MouseEvent;
+              return !mouse.ctrlKey && !mouse.button;
+            }}
             onMoveEnd={({ coordinates, zoom }) => {
               if (isAnimating || !coordinates || zoom === undefined) return;
               const next = { center: coordinates, zoom };
