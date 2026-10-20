@@ -446,13 +446,6 @@ export function WorldMap({
   }
 
   const isZoomedIn = view.zoom > DEFAULT_VIEW.zoom + 0.1;
-  // Dragging only pans (zoom stays at DEFAULT_VIEW.zoom), so isZoomedIn alone
-  // missed a plain drag — the globe would end up off-center with no way
-  // back. Show the reset button whenever the view has drifted at all.
-  const hasPanned =
-    Math.abs(view.center[0] - DEFAULT_VIEW.center[0]) > 0.5 ||
-    Math.abs(view.center[1] - DEFAULT_VIEW.center[1]) > 0.5;
-  const showResetButton = isZoomedIn || hasPanned;
   const counterScale = 1 / view.zoom;
 
   // Keep land, pins, lights, and routes on their actual geographic
@@ -492,7 +485,7 @@ export function WorldMap({
             a safe bottom-center zone rather than the corners — the
             corners of this bounding box fall outside the visible disk. */}
         <div className="absolute inset-x-0 bottom-6 z-10 flex items-center justify-center gap-2">
-          {showResetButton && (
+          {isZoomedIn && (
             <button
               type="button"
               onClick={handleReset}
@@ -603,9 +596,22 @@ export function WorldMap({
             }}
             onMoveEnd={({ coordinates, zoom }) => {
               if (isAnimating || !coordinates || zoom === undefined) return;
+              // Commit where the drag actually left it first — animateView
+              // reads viewRef.current as its start point, so skipping this
+              // made the "snap back" below a same-point no-op while the
+              // globe stayed at d3-zoom's last imperative transform.
               const next = { center: coordinates, zoom };
               viewRef.current = next;
               setView(next);
+              // At world-view zoom a drag has nowhere purposeful to go, so
+              // spring it back rather than leaving the globe stuck wherever
+              // it was dragged to. Once zoomed into a cluster, panning is
+              // deliberate exploration and sticks until "World view" is
+              // clicked.
+              if (zoom <= DEFAULT_VIEW.zoom + 0.1) {
+                setIsAnimating(true);
+                void animateView(DEFAULT_VIEW, 500).then(() => setIsAnimating(false));
+              }
             }}
           >
             <Sphere id="globe-sphere" fill="url(#world-ocean)" stroke="#818cf8" strokeWidth={1.2 * counterScale} />
