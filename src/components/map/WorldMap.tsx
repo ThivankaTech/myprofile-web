@@ -24,8 +24,9 @@ import type { TravelDestination, WorkExperience } from "@/lib/profile";
 
 // 50m-resolution country boundaries (Natural Earth data, via the
 // world-atlas package) — noticeably more accurate shapes than the default
-// 110m set, especially for smaller countries like Sri Lanka.
-const GEO_URL = "/world-50m.json";
+// 110m set, especially for smaller countries like Sri Lanka. Manual fetch,
+// so (unlike next/image) it needs the basePath prefixed by hand.
+const GEO_URL = `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/world-50m.json`;
 
 interface View {
   center: [number, number];
