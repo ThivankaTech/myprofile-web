@@ -446,6 +446,13 @@ export function WorldMap({
   }
 
   const isZoomedIn = view.zoom > DEFAULT_VIEW.zoom + 0.1;
+  // Dragging only pans (zoom stays at DEFAULT_VIEW.zoom), so isZoomedIn alone
+  // missed a plain drag — the globe would end up off-center with no way
+  // back. Show the reset button whenever the view has drifted at all.
+  const hasPanned =
+    Math.abs(view.center[0] - DEFAULT_VIEW.center[0]) > 0.5 ||
+    Math.abs(view.center[1] - DEFAULT_VIEW.center[1]) > 0.5;
+  const showResetButton = isZoomedIn || hasPanned;
   const counterScale = 1 / view.zoom;
 
   // Keep land, pins, lights, and routes on their actual geographic
@@ -485,7 +492,7 @@ export function WorldMap({
             a safe bottom-center zone rather than the corners — the
             corners of this bounding box fall outside the visible disk. */}
         <div className="absolute inset-x-0 bottom-6 z-10 flex items-center justify-center gap-2">
-          {isZoomedIn && (
+          {showResetButton && (
             <button
               type="button"
               onClick={handleReset}
