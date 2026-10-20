@@ -11,6 +11,7 @@ interface NavbarProps {
 }
 
 const FADE = "28px";
+const EMAIL = "thivanka.saranathapro@gmail.com";
 
 export function Navbar({ name, activeTab, onChangeTab }: NavbarProps) {
   const initial = name.trim().charAt(0).toUpperCase() || "?";
@@ -49,11 +50,17 @@ export function Navbar({ name, activeTab, onChangeTab }: NavbarProps) {
   return (
     <header className="sticky top-0 z-30 border-b border-border bg-surface/80 backdrop-blur-md">
       <div className="mx-auto flex w-full max-w-4xl flex-col gap-2 px-4 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:px-6">
-        <div className="flex items-center gap-2.5">
+        <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1">
           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-semibold text-bg">
             {initial}
           </span>
           <span className="text-sm font-semibold text-fg">{name}</span>
+          <a
+            href={`mailto:${EMAIL}`}
+            className="text-xs text-fg-dim transition-colors hover:text-accent hover:underline"
+          >
+            {EMAIL}
+          </a>
         </div>
 
         <nav
