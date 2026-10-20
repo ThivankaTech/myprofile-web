@@ -6,6 +6,7 @@ import { useMemo } from "react";
 
 import { countryFlag } from "@/lib/countryFlag";
 import { formatPeriod, isPresent, monthIndex } from "@/lib/dates";
+import { DownloadCvButton } from "@/components/DownloadCvButton";
 import { RecommendationsCarousel } from "@/components/RecommendationsCarousel";
 import type { Education, Recommendation, TravelDestination, WorkExperience } from "@/lib/profile";
 
@@ -162,6 +163,7 @@ export function MapTab({
               ))}
             </p>
           )}
+          <DownloadCvButton className="mt-6" />
         </div>
 
         {/* Right: story + timeline */}

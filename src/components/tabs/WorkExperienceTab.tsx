@@ -1,4 +1,5 @@
 import { Card } from "@/components/Card";
+import { DownloadCvButton } from "@/components/DownloadCvButton";
 import { formatPeriod } from "@/lib/dates";
 import type { WorkExperience } from "@/lib/profile";
 
@@ -10,6 +11,7 @@ interface WorkExperienceTabProps {
 export function WorkExperienceTab({ workExperience, onSelectExperience }: WorkExperienceTabProps) {
   return (
     <div className="flex flex-col gap-4">
+      <DownloadCvButton className="self-start" />
       {workExperience.map((exp) => (
         <Card key={exp.id} padded={false}>
           <button
