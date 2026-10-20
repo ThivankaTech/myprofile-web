@@ -596,6 +596,16 @@ export function WorldMap({
             }}
             onMoveEnd={({ coordinates, zoom }) => {
               if (isAnimating || !coordinates || zoom === undefined) return;
+              // A plain click (e.g. on a pin) is a zero-distance drag to
+              // d3-zoom and still fires this — without this guard it raced
+              // isAnimating against handleClusterClick's own zoom-in and
+              // silently swallowed every pin click.
+              const prev = viewRef.current;
+              const moved =
+                Math.abs(coordinates[0] - prev.center[0]) > 0.5 ||
+                Math.abs(coordinates[1] - prev.center[1]) > 0.5 ||
+                Math.abs(zoom - prev.zoom) > 0.05;
+              if (!moved) return;
               // Commit where the drag actually left it first — animateView
               // reads viewRef.current as its start point, so skipping this
               // made the "snap back" below a same-point no-op while the
