@@ -20,16 +20,13 @@ import { CityScene } from "@/components/map/CityScene";
 import { TerrainFeatures } from "@/components/map/TerrainFeatures";
 import { monthIndex } from "@/lib/dates";
 import { countryFlag } from "@/lib/countryFlag";
+import { withBasePath } from "@/lib/basePath";
 import type { TravelDestination, WorkExperience } from "@/lib/profile";
-
-// Raw asset URLs below bypass next/image, so unlike <Image> they need the
-// basePath prefixed by hand.
-const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 // 50m-resolution country boundaries (Natural Earth data, via the
 // world-atlas package) — noticeably more accurate shapes than the default
 // 110m set, especially for smaller countries like Sri Lanka.
-const GEO_URL = `${BASE_PATH}/world-50m.json`;
+const GEO_URL = withBasePath("/world-50m.json");
 
 interface View {
   center: [number, number];
@@ -998,7 +995,7 @@ export function WorldMap({
                       {photo ? (
                         <g>
                           <image
-                            href={`${BASE_PATH}${photo.src}`}
+                            href={withBasePath(photo.src)}
                             x={151}
                             y={7}
                             width={62}

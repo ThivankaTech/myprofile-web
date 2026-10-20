@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { Card } from "@/components/Card";
+import { withBasePath } from "@/lib/basePath";
 import type { Activity, TravelDestination } from "@/lib/profile";
 
 interface ActivitiesTabProps {
@@ -38,7 +39,7 @@ function ActivityList({ list }: { list: Activity[] }) {
                       }`}
                     >
                       <Image
-                        src={img.src}
+                        src={withBasePath(img.src)}
                         alt={img.alt}
                         fill
                         priority={i === 0}
@@ -92,7 +93,7 @@ export function ActivitiesTab({ activities, travelDestinations, onSelectTravel }
                   {photo && (
                     <div className="relative aspect-[4/3] overflow-hidden rounded-t-2xl">
                       <Image
-                        src={photo.src}
+                        src={withBasePath(photo.src)}
                         alt={photo.alt}
                         fill
                         sizes="(min-width: 896px) 440px, 100vw"

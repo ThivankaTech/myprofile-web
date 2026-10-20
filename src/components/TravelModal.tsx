@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect } from "react";
 
+import { withBasePath } from "@/lib/basePath";
 import type { TravelDestination } from "@/lib/profile";
 
 interface TravelModalProps {
@@ -70,7 +71,7 @@ export function TravelModal({ destination, onClose }: TravelModalProps) {
               {destination.images.map((img) => (
                 <Image
                   key={img.src}
-                  src={img.src}
+                  src={withBasePath(img.src)}
                   alt={img.alt}
                   width={0}
                   height={0}
